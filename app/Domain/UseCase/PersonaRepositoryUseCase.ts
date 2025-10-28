@@ -46,7 +46,7 @@ export class PersonaRepositoryUseCase implements IPersonaRepositoryUseCase {
         const horaActual = new Date();
         const horas = horaActual.getHours();
         const minutos = horaActual.getMinutes();
-        if (horas === 13 && minutos >= 20 && minutos < 45) {
+        if (horas === 13 && minutos >= 20 && minutos < 39) {
             horaPermitida = false;
         }
         return horaPermitida;
